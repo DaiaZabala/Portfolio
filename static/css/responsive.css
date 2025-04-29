@@ -125,47 +125,56 @@
       text-align: justify;
     }
   
-/* Fondo de Proyectos */
+/* 👉 SECCIÓN PROYECTOS AJUSTADA EN MÓVILES */
 .fondo-proyectos {
-  min-height: auto;
-  padding: 2rem; /* 👉 Más padding, no solo 1.5rem */
+  padding: 2rem 1rem;
 }
 
-/* Proyectos cards */
 .fondo-proyectos .row {
   flex-direction: column;
-  gap: 2rem; /* 👉 Espaciado entre tarjetas */
+  gap: 2rem;
+  margin: 0;
 }
 
 .fondo-proyectos .col {
-  flex: 1 1 100%;
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
   width: 100%;
-  padding: 2rem; /* 👉 Más padding interno dentro de la card */
-  border-radius: 15px; /* 👉 Bordes suaves */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* 👉 Sombra un poco más visible */
-  min-height: auto;
+  max-width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  background-color: #1a1a1a;
+}
+
+.card-body {
+  padding: 1rem;
 }
 
 .card-title {
-  font-size: 1.5rem; /* 👉 Agrandar el título del proyecto */
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1rem;
+  word-break: normal;
 }
 
 .card-text {
-  font-size: 1rem; /* 👉 Aumentar un poco el texto */
+  font-size: 1rem;
   text-align: justify;
+  word-break: normal;
 }
 
 .card-img-top {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 1rem; /* 👉 Separación entre imagen y texto */
+  margin-bottom: 1rem;
 }
 
 img {
