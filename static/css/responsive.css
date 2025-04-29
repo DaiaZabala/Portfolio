@@ -4,27 +4,47 @@
 .container {
     max-width: 650px; /* Antes 1000px */
   }
-  
   /* Cambio en section */
   section {
-    padding: 1rem 2rem; /* Antes era 2rem 8rem */
+    padding: 1rem 2rem;
   }
-  
-  /* Ajustar .fondo-proyectos */
+
+  /* Fondo proyectos ajustado */
   .fondo-proyectos {
-    min-height: auto; /* Antes 800px */
+    min-height: auto;
     padding: 20px;
   }
-  
-  /* Imágenes más adaptables */
-  img {
-    width: 90%; /* Antes 70% */
-    height: auto;
+
+  .fondo-proyectos .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 !important; /* 👈 Esto es MUY importante */
+    
+    padding: 0 !important;
+  }
+
+  .fondo-proyectos .col {
+    flex: 0 0 calc(48% - 1rem);
+    max-width: 48%;
+    min-width: 280px;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
   }
   
+
+  /* Imágenes adaptadas */
+  img {
+    width: 90%;
+    height: auto;
+  }
+
   /* Cards */
   .card {
-    min-height: auto; /* Quitar altura mínima forzada */
+    min-height: auto;
     padding: 10px;
   }
   
@@ -462,11 +482,23 @@ footer .row {
     
     .fondo-proyectos .row {
       display: flex;
-      flex-direction: column; /* 👈 APILA EN COLUMNA */
-      gap: 1rem;
-      margin: 0;
-      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0 !important;
+      padding: 0 !important;
     }
+    
+    .fondo-proyectos .col {
+      flex: 0 0 calc(48% - 1rem);
+      max-width: 48%;
+      min-width: 280px;
+      box-sizing: border-box;
+      display: flex !important;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
     
     .card {
       width: 100%;
