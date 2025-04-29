@@ -183,6 +183,12 @@ footer .row {
   footer img {
     margin: 5px;
   }
+  footer .list-inline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
   
     /* Botón hamburguesa */
     #menu-toggle {
