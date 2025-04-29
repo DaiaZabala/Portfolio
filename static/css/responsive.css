@@ -125,16 +125,16 @@
       text-align: justify;
     }
   
- /* Fondo de Proyectos */
+/* Fondo de Proyectos */
 .fondo-proyectos {
   min-height: auto;
-  padding: 1.5rem; /* 👉 un poco más de espacio que solo 20px */
+  padding: 2rem; /* 👉 Más padding, no solo 1.5rem */
 }
 
-/* Proyectos cards (importante para que entre 1 por fila) */
+/* Proyectos cards */
 .fondo-proyectos .row {
   flex-direction: column;
-  gap: 2rem; /* 👉 más espacio entre las cards */
+  gap: 2rem; /* 👉 Espaciado entre tarjetas */
 }
 
 .fondo-proyectos .col {
@@ -144,16 +144,28 @@
 
 .card {
   width: 100%;
-  padding: 1.5rem; /* 👉 más respiración dentro de la card */
-  border-radius: 10px; /* 👉 bordes más suaves */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 👉 una sombra ligera para separar las cards del fondo */
+  padding: 2rem; /* 👉 Más padding interno dentro de la card */
+  border-radius: 15px; /* 👉 Bordes suaves */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* 👉 Sombra un poco más visible */
   min-height: auto;
+}
+
+.card-title {
+  font-size: 1.5rem; /* 👉 Agrandar el título del proyecto */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem; /* 👉 Aumentar un poco el texto */
+  text-align: justify;
 }
 
 .card-img-top {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* 👉 imágenes también suaves en bordes */
+  border-radius: 10px;
+  margin-bottom: 1rem; /* 👉 Separación entre imagen y texto */
 }
 
 img {
@@ -285,6 +297,10 @@ footer .row {
       margin-left: auto;
       margin-right: auto;
     }
+    label, .colocar_nombre, .colocar_email, .colocar_mensaje {
+      font-size: 1rem;
+    }
+    
   }
   
   @media (min-width: 768px) and (max-width: 1024px) {
